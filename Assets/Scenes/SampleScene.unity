@@ -314,6 +314,10 @@ PrefabInstance:
       propertyPath: mainThrust
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 6008623403003671222, guid: c8742c02479e040218b4d5e871b7d6e3, type: 3}
+      propertyPath: rotationSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7267929288762338834, guid: c8742c02479e040218b4d5e871b7d6e3, type: 3}
       propertyPath: m_Name
       value: Helicopter
