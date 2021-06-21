@@ -8,7 +8,11 @@ LightingSettings:
   m_PrefabAsset: {fileID: 0}
   m_Name: New Lighting Settings
   serializedVersion: 3
+<<<<<<< HEAD
+  m_GIWorkflowMode: 0
+=======
   m_GIWorkflowMode: 1
+>>>>>>> main
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 0
   m_RealtimeEnvironmentLighting: 1
