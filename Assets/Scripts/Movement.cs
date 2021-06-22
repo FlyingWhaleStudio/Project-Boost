@@ -2,14 +2,16 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    new Rigidbody rigidbody;
-    AudioSource audioSource;
     [SerializeField] float mainThrust = 1000f;
     [SerializeField] float rotationThrust = 100f;
+    [SerializeField] AudioClip mainEngine;
+
+    Rigidbody rb;  
+    AudioSource audioSource;
 
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -23,11 +25,11 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rigidbody.AddRelativeForce(mainThrust * Vector3.up * Time.deltaTime);
+            rb.AddRelativeForce(mainThrust * Vector3.up * Time.deltaTime);
             if (!audioSource.isPlaying)
             {
-                audioSource.Play();
-            } 
+                audioSource.PlayOneShot(mainEngine);
+            }
         } else {
             audioSource.Stop();
         }
@@ -48,8 +50,8 @@ public class Movement : MonoBehaviour
 
     private void ApplyRotation(float rotationThisFrame)
     {
-        rigidbody.freezeRotation = true;
+        rb.freezeRotation = true;
         transform.Rotate(rotationThisFrame * Vector3.forward * Time.deltaTime);
-        rigidbody.freezeRotation = false;
+        rb.freezeRotation = false;
     }
 }

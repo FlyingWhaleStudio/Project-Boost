@@ -363,6 +363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6008623403003671222, guid: c8742c02479e040218b4d5e871b7d6e3, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: 4918aa947a61049f3a628233b6cfb48b, type: 3}
     - target: {fileID: 7267929288762338834, guid: c8742c02479e040218b4d5e871b7d6e3, type: 3}
       propertyPath: m_Name
       value: Helicopter
