@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3515256737618341333}
   - component: {fileID: 6200235681874378402}
   - component: {fileID: 7562684841621582213}
-  - component: {fileID: 6008623403003671222}
   - component: {fileID: 9176341349905960887}
   - component: {fileID: 25274930}
+  - component: {fileID: 6008623403003671222}
   - component: {fileID: 2391685968778567853}
   m_Layer: 0
   m_Name: Helicopter
@@ -99,20 +99,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6008623403003671222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7267929288762338834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2d49ad3813cb4f67a4c966bb5afba08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainThrust: 2000
-  rotationThrust: 200
 --- !u!54 &9176341349905960887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -225,6 +211,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6008623403003671222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267929288762338834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d49ad3813cb4f67a4c966bb5afba08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainThrust: 2000
+  rotationThrust: 200
 --- !u!114 &2391685968778567853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,3 +237,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed052c7bcc76048bd8c35388e443599d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoadDelay: 1
