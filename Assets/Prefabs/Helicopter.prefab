@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 25274930}
   - component: {fileID: 6008623403003671222}
   - component: {fileID: 2391685968778567853}
+  - component: {fileID: 7113109997318790260}
   m_Layer: 0
   m_Name: Helicopter
   m_TagString: Untagged
@@ -282,6 +283,18 @@ MonoBehaviour:
   success: {fileID: 8300000, guid: 07a986742639940d99eeecb34a01ee45, type: 3}
   crashParticle: {fileID: 5049715132762452971}
   successParticle: {fileID: 2502829617923908557}
+--- !u!114 &7113109997318790260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267929288762338834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2dadbf2115a42a5a66790701c54fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &171877456967526150
 PrefabInstance:
   m_ObjectHideFlags: 0
